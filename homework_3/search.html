@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ХочуАвто | Поиск</title>
+  <link rel="icon" href="images/logo.png">
+  <style>
+    body {
+      background: url('images/fon.jpg');
+      background-size: cover;
+    }
+    .block {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://fom.in.ua/echo" method="get">
+    <fieldset style="width: 500px;">
+      <legend style="color: rgb(216, 25, 25);">
+        <h2>Настройка поиска авто</h2>
+      </legend> 
+      <fieldset style="width: 500px;">
+        <legend style="color: rgb(216, 25, 25);">
+          <h3>Основные параметры</h3>
+        </legend>
+        <div class="block">
+          <b>Тип транспорта:</b>
+          <select name="car_type">
+            <option value="all_type">Все виды транспорта</option>
+            <option value="legkoviye">Легковые</option>
+            <option value="moto">Мото</option>
+            <option value="gruzoviki">Грузовики</option>
+            <option value="pritsepy">Прицепы</option>
+            <option value="spetstekhnika">Спецтехника</option>
+            <option value="avtodoma">Автодома</option>
+            <option value="avtobusy">Автобусы</option>
+          </select>
+        </div>
+        <div class="block">
+          <b>Тип кузова:</b><br>
+          <label><input type="checkbox" name="body_type" value="universal">Универсал</label>
+          <label><input type="checkbox" name="body_type" value="sedan">Седан</label>
+          <label><input type="checkbox" name="body_type" value="khetchbek">Хэтчбек</label>
+          <label><input type="checkbox" name="body_type" value="krossover">Кроссовер</label>
+          <label><input type="checkbox" name="body_type" value="kupe">Купе</label><br>
+          <label><input type="checkbox" name="body_type" value="kabriolet">Кабриолет</label>
+          <label><input type="checkbox" name="body_type" value="miniven">Минивэн</label>
+          <label><input type="checkbox" name="body_type" value="pikap">Пикап</label>
+          <label><input type="checkbox" name="body_type" value="drugoe">Другое</label>
+        </div>
+        <div class="block">
+          <b>Страна производитель:</b>
+          <select name="producing_country">
+            <option value="all_countries">Выберите страну</option>
+            <option value="germany">Германия</option>
+            <option value="japan">Япония</option>
+            <option value="france">Франция</option>
+            <option value="usa">США</option>
+            <option value="korea">Корея</option>
+            <option value="ukrraine">Украина</option>
+          </select>
+        </div>
+        <div class="block">
+          <b>Марка, модель:</b>
+          <select name="brand_type">
+            <option value="all_brands">Выберите марку</option>
+            <option value="bmw">BMW</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="renault">Renault</option>
+            <option value="ford">Ford</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="zaz">ЗАЗ</option>
+          </select>
+          <select name="model_type">
+            <option value="all_models">Выберите модель</option>
+            <optgroup label="BMW">                               
+              <option value="320">320</option>
+              <option value="528">528</option>
+              <option value="X5">X5</option>
+              <option value="725">725</option>
+            </optgroup>
+            <optgroup label="Mitsubishi">                               
+              <option value="lancer">Lancer</option>
+              <option value="galant">Galant</option>
+              <option value="outlander">Outlander</option>
+              <option value="pajero">Pajero</option>
+            </optgroup>
+            <optgroup label="Renault">                               
+              <option value="logan">Logan</option>
+              <option value="duster">Duster</option>
+              <option value="megane">Megane</option>
+              <option value="sandero">Sandero</option>
+            </optgroup>
+            <optgroup label="Ford">                               
+              <option value="fiesta">Fiesta</option>
+              <option value="focus">Focus</option>
+              <option value="mustang">Mustang</option>
+              <option value="fusion">Fusion</option>
+            </optgroup>
+            <optgroup label="Hyundai">                               
+              <option value="getz">Getz</option>
+              <option value="elantra">Elantra</option>
+              <option value="tucson">Tucson</option>
+              <option value="santa_fe">Santa FE</option>
+            </optgroup>
+            <optgroup label="ЗАЗ">                               
+              <option value="slavuta">1103 Славута</option>
+              <option value="sens">Sens</option>
+              <option value="lanos">Lanos</option>
+              <option value="tavriya">1102 Таврия</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="block">
+          <b>Год</b>
+          <select name="year_min">
+            <option value="min">от</option> 
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+          </select> - 
+          <select name="year_max">
+            <option value="max">до</option>
+            <option value="2022">2022</option> 
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+          </select>
+        </div>
+        <div class="block">
+          <b>Стоимость:</b>
+          <input type="text" name="price_min" placeholder="От" style="width: 80px;"> 
+          <input type="text" name="price_max" placeholder="До" style="width: 80px;">
+          <input type="radio" name="currency" value="$" checked>$
+          <input type="radio" name="currency" value="€">€
+          <input type="radio" name="currency" value="грн.">грн.<br>
+          <label><input type="checkbox" name="nds">Цена с НДС</label><br>
+          <label><input type="checkbox" name="bargain">Возможен торг</label>
+        </div>
+      </fieldset>
+      <fieldset style="width: 500px;">
+        <legend style="color: rgb(216, 25, 25);">
+          <h3>Дополнительно</h3>
+        </legend>
+        <div class="block">
+          <b>Состояние:</b>
+          <select name="car_condition" multiple>
+            <optgroup label="Выберите состояние авто">
+              <option value="new">Новые - из автосалона</option>
+              <option value="used_car">БУ - не требуют вложений</option>
+              <option value="brought_cars">Свежепригнанные - хорошее сост.</option>
+              <option value="after_dtp">После ДТП</option>
+              <option value="need_repair">Требуют ремонта</option>
+              <option value="uncleared_cars">Не растаможенные</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="block">
+          <b>Тип топлива:</b><br>
+            <label><input type="checkbox" name="fuel_type" value="petrol">Бензин</label>
+            <label><input type="checkbox" name="fuel_type" value="diesel_fuel">Дизель</label>
+            <label><input type="checkbox" name="fuel_type" value="gas">Газ</label>
+            <label><input type="checkbox" name="fuel_type" value="gas_petrol">Газ/Бензин</label><br>
+            <label><input type="checkbox" name="fuel_type" value="electro">Электро</label>
+            <label><input type="checkbox" name="fuel_type" value="electro_hybrid">Эл./Гибрид</label>
+        </div>
+        <div class="block">
+          <b>КПП:</b>
+          <select name="transmission" multiple>
+            <optgroup label="Выберите вид КПП">
+              <option value="manual_transmission">Механика</option>
+              <option value="atomatic_transmission">Автомат</option>
+              <option value="tiptronic">Типтроник</option>
+              <option value="variable_speed_drive">Вариатор</option>
+              <option value="robot">Робот</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="block">
+          <b>Цвет:</b> Выберите цвет авто <input type="color" name="car_color">
+        </div>
+        <details>
+          <summary>Комфорт</summary>
+          <label><input type="checkbox" name="comfort_type" value="on_board_computer">Бортовой компьютер</label><br>
+          <label><input type="checkbox" name="comfort_type" value="luke">Люк</label><br>
+          <label><input type="checkbox" name="comfort_type" value="leather_interior">Кожанный салон</label><br>
+          <label><input type="checkbox" name="comfort_type" value="parktronic">Парктроник</label><br>
+          <label><input type="checkbox" name="comfort_type" value="cruise_control">Круиз контроль</label><br>
+          <label><input type="checkbox" name="comfort_type" value="multiwheel">Мультируль</label><br>
+          <label><input type="checkbox" name="comfort_type" value="climate_control">Климат контроль</label><br>
+          <label><input type="checkbox" name="comfort_type" value="heated_seats">Подогрев сидений</label><br>
+        </details>
+        <details>
+          <summary>Прочее</summary>
+          <label><input type="checkbox" name="other" value="gas_installation">Газовая установка (ГБО)</label><br>
+          <label><input type="checkbox" name="other" value="toning">Тонирование стекол</label><br>
+          <label><input type="checkbox" name="other" value="tow_bar">Фаркоп</label><br>
+          <label><input type="checkbox" name="other" value="tuning">Тюнинг</label><br>
+        </details>
+      </fieldset>
+      <p>
+        <input type="reset" name="reset" value="Сбросить настройки">
+      </p>
+      <input type="image" src="images/search.png" style="width: 180px;" alt="Search" name="search">
+    </fieldset>  
+  </form>       
+</body>
+</html>

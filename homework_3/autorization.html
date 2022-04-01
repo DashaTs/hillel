@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ХочуАвто | Авторизация</title>
+  <link rel="icon" href="images/logo.png">
+  <style>
+    body {
+      background: url('images/fon.jpg');
+      background-size: cover;
+    }
+    label {
+      color: rgb(216, 25, 25);
+    }
+    .block {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://fom.in.ua/echo" method="post">
+    <fieldset style="width: 400px">
+      <legend style="color: rgb(216, 25, 25);">
+        <h2>Вход на сайт ХочуАвто</h2>
+      </legend>
+      <div class="block">
+        <label>
+          <b>E-mail: </b><input type="email" name="email" placeholder="email@example.com" required>
+        </label> 
+      </div>
+      <div class="block">
+        <label>
+          <b>Пароль: </b><input type="password" name="password" required>
+        </label>
+      </div>
+      <div class="block">
+        <label style="color: black;">
+          <input type="checkbox" name="remember_me"> Запомнить меня
+        </label>
+      </div>
+      <div class="block">
+        <a href="registr.html">Зарегестрироваться на ХочуАвто</a> 
+      </div>
+      <input type="image" src="images/enter.png" style="width: 180px;" alt="Enter"> 
+    </fieldset>
+  </form>
+</body>   
+</html>

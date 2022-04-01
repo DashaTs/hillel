@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ХочуАвто | Регистрация</title>
+  <link rel="icon" href="images/logo.png">
+  <style>
+    body {
+      background: url('images/fon.jpg');
+      background-size: cover;
+    }
+    label {
+      color: rgb(216, 25, 25);
+    }
+    .block {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://fom.in.ua/echo" method="post">
+    <fieldset style="width: 450px;">
+      <legend style="color: rgb(216, 25, 25);">
+        <h2>Регистрация на сайте ХочуАвто</h2>
+      </legend> 
+      <div class="block">
+        <label>
+          <b>Имя: </b><input type="text" name="name" placeholder="Имя" required> 
+        </label>
+      </div>
+      <div class="block">
+        <label>
+          <b>Фамилия: </b><input type="text" name="surname" placeholder="Фамилия" required>
+        </label> 
+      </div>
+      <div class="block">
+        <label>
+          <b>E-mail: </b><input type="email" name="email" placeholder="email@example.com" required>
+        </label><br>
+        <small style="color: rgba(124, 126, 133, 0.979);">Можно использовать буквы латинского алфавита, цифры и точки</small>
+      </div>
+      <div class="block">
+        <label>
+          <b>Телефон: </b><input type="tel" name="tel" value="+380">
+        </label>
+      </div>
+      <div class="block">
+        <label>
+          <b>Пароль: </b><input type="password" name="password" minlength="8" required><br> 
+        </label>
+        <small style="color: rgba(124, 126, 133, 0.979);">Пароль должен содержать не менее восьми знаков</small>
+      </div>
+      <div class="block">
+        <label>
+          <b>Подтвердите пароль: </b><input type="password" name="password" required>
+        </label>
+      </div>
+      <div class="block">
+        <label style="color: black;">
+          <input type="checkbox" name="rules" required> Я принимаю условия <a href="rules.html">"Соглашение о предоставлении онлайн-услуг"</a> 
+        </label>
+      </div>
+      <div class="block">
+        <a href="autorization.html">Уже зарегестрированы?</a> 
+      </div>
+      <div class="block">
+        <input type="reset" value="Сбросить настройки">
+      </div>    
+      <input type="image" src="images/registr.png" style="width: 200px;" alt="Registr">
+    </fieldset>
+  </form>   
+</body>
+</html>
