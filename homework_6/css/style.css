@@ -8,13 +8,13 @@ body {
   -o-background-size: cover;
 }
 
-.titel {
+.title {
   text-align: center;
   margin-top: 2.4em;
   font-size: 1.8em;
 }
 
-.titel__logo {
+.title__logo {
   background-color: red;
   outline: 3px solid rgba(255,255,255,1); 
   outline-offset: -8px; 
@@ -34,7 +34,6 @@ body {
   text-align: center;
   vertical-align: top;
   width: 210px;
-  height: 580px;
   padding: 10px;
   margin: 0px 10px 20px;
   box-sizing: border-box; 
@@ -51,7 +50,7 @@ body {
   height: 250px;
 }
 
-.card__titel {
+.card__title {
   text-transform: capitalize;
   font-size: 1.5em;
   height: 50px;
