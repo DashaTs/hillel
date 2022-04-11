@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Иванов Иван | Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+</head>
+
+<body>
+  <div class="bg__gray">
+    <header class="content">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Главная</a>
+          <li><a class="nav__link" href="../index.html">Об авторе</a>
+          <li><a class="nav__link" href="../index.html">Работы</a>
+          <li><a class="nav__link" href="../index.html">Процесс</a>
+          <li class="active"><a href="#contact">Контакты</a>
+        </ul>
+      </nav>
+    </header>
+    <main class="content contact_main">
+      <form action="https://fom.in.ua/echo" method="post">
+        <fieldset class="contact__form">
+          <legend> 
+            <h2 class="contact__form_title">Свяжитесь со мной</h2>
+          </legend>
+          <div class="contact__form_feedback">
+            <label>
+              <input class="half_size_block name" type="text" name="name" placeholder="Имя" required><!--
+            --></label> 
+            <label>
+              <input class="half_size_block" type="email" name="email" placeholder="Эл.почта" required><!--
+            --></label>
+            <label>
+              <input class="full_size_block" type="tel" name="tel" placeholder="Телефон"><!--
+            --></label>
+            <label>
+              <textarea class="full_size_block" rows="8" name="text" placeholder="Добавьте сообщение..."></textarea><!--
+            --></label>
+            <input class="contact__btn" type="image" src="../images/send.jpg" alt="отправить">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
