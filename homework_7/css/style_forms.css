@@ -1,0 +1,48 @@
+.contact_main {
+  padding-bottom: 100px;
+}
+
+.contact__form {
+  width: 50%;
+}
+
+.contact__form_title {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  color: #34547A;
+  padding: 10px;
+}
+
+.contact__form_feedback {
+  vertical-align: top;
+  text-align: justify;
+  padding: 0 40px;
+}
+
+input {
+  height: 35px;
+}
+
+.half_size_block {
+  width: 45%;
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: top;
+  box-sizing: border-box;
+} 
+
+.full_size_block {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.contact__btn {
+  width: 50%;
+  height: 100%;
+  transform: translateX(50%);
+}
