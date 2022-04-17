@@ -55,6 +55,7 @@ body {
   line-height: 20px;
   
   background-color: #F0F1F3;
+  border-radius: 4px;
 }
 
 .notification::before {
