@@ -37,6 +37,9 @@ ul li {
 .nav__list {
   display: flex;
   justify-content: flex-start;
+
+  box-sizing: border-box;
+  margin-bottom: -7px;
 }
 
 ul.nav__list > li {
@@ -49,7 +52,7 @@ ul.nav__list > li {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 27px;
 
   text-decoration: none;
 
