@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.position {
+  position: sticky;
+  top: 0;
+}
+
+.bg__grey {
+  background-color: #333333;
+  border-bottom: 7px solid #199bfe;
+}
+
+.content {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+
+  display: flex;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul.nav__list > li {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+.nav__link_with-subitem::after {
+  content: "+";
+  color: #FFFFFF;
+}
+
+.nav__item:hover {
+  background-color: #199bfe;
+}
+
+.nav__sublist {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  
+  display: none;
+  width: 250px;
+
+  border: 2px solid #0082e7;
+  border-radius: 0 0 4px 4px;
+  background-color: #199bfe;
+}
+
+.nav__sublist .nav__sublist {
+  top: 0;
+  left: 100%;
+  
+  margin-top: 0;
+}
+
+.nav__subitem {
+  text-align: left;
+  text-transform: none;
+
+  border-bottom: 2px solid #0082e7;
+}
+
+.nav__subitem:last-child {
+  border-bottom: none;
+}
+
+.nav__sublink:hover {
+  background-color: #35a6ff;
+}
+
+.nav__item:hover > .nav__sublist {
+  display: block;
+}
+
+.nav__subitem:hover > .nav__sublist {
+  display: block;
+}
+
+.bg__gray {
+  background-color: #EEEFF1;
+}
+
+.introduction {
+  padding: 30px 20px 50px;
+}
+
+.introduction__title {
+  margin: 0 0 15px;
+
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 79px;
+}
+
+.introduction__description {
+  margin-bottom: 15px;
+  text-align: justify;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #727272;
+}
+
+.introduction__description:last-child {
+  margin-bottom: 0;
+}
+
+.bg__grey:last-child {
+  border-bottom: none;
+  border-top: 7px solid #199bfe;
+}
+
+.footer {
+  padding: 30px;
+}
+
+.footer__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+}
