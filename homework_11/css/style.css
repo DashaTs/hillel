@@ -1,0 +1,8 @@
+@import url(normalize.css);
+@import url(fonts.css);
+@import url(../css/components/style_content.css);
+@import url(../css/components/style_header.css);
+@import url(../css/components/style_main.css);
+@import url(../css/components/style_footer.css);
+@import url(../css/components/style_btn.css);
+@import url(../css/components/style_bg.css);

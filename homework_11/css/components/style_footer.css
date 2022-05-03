@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 3.33rem;
+  padding-bottom: 3.33rem;
+  gap: 1rem;
+}
+
+.footer__group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.footer__description {
+  width: 20rem;
+}
+
+.footer__group-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 5rem;
+}

@@ -1,0 +1,24 @@
+body {
+  background-color: #FFFFFF;
+}
+
+.bg__header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #cccccc;
+}
+
+.bg__peach {
+  background-color: #FF9C7D;
+}
+
+.bg__light-yellow {
+  background-color: #fef8e4;
+}
+
+.bg__light-blue {
+  background-color: #C9E8F2;
+}
+
+.bg__light-brown {
+  background-color: #DABC98;
+}
