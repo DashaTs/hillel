@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.btn__small {
+.btn_small {
   padding: 0 2.4rem;
 
   line-height: 3rem;
@@ -18,7 +18,7 @@
   border: 1px solid #808080;
 }
 
-.btn__big {
+.btn_big {
   padding: 0 2rem;
 
   line-height: 4rem;
@@ -26,7 +26,7 @@
   border: 1px solid #808080;
 }
 
-.btn__small_primary {
+.btn_small_primary {
   padding: 0 1.47rem;
 
   border: none;
@@ -34,7 +34,7 @@
   color: #FFFFFF;
 }
 
-.btn__big_primary {
+.btn_big_primary {
   padding: 0 2.8rem;
 
   border: none;
@@ -42,7 +42,7 @@
   color: #FFFFFF;
 }
 
-.btn__no-border {
+.btn_no-border {
   display: inline-block;
   padding: 0 0.67rem 0.67rem 0;
 
@@ -52,13 +52,13 @@
   cursor: pointer;
 }
 
-.btn__underline {
+.btn_underline {
   font-weight: 400;
 
   text-decoration: underline;
 }
 
-.btn__big_last {
+.btn_big_last {
   padding: 0 2.8rem;
 
   font-size: 1.13rem; 

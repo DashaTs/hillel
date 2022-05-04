@@ -4,7 +4,7 @@
   z-index: 1;
 }
 
-.header_items__position {
+.header__content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -12,7 +12,7 @@
   padding: 1.67rem 0;
 }
 
-.nav__group {
+.header__nav-group {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -35,13 +35,13 @@ ul.nav__menu > li {
   text-align: left;
 }
 
-.nav__link {
+.nav__menu > li a {
   display: inline-block;
   width: 100%;
   padding: 0.67rem 1px;
 }
 
-.btn__group {
+.btn-group {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
