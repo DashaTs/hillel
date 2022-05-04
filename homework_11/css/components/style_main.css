@@ -403,7 +403,7 @@ text-decoration: underline;
   justify-content: flex-start;
   align-items: flex-start;
   padding-bottom: 6.67rem;
-  /* gap: 2.26rem; */
+  gap: 2.26rem;
   
   border-bottom: 1px solid #000000;
 }
@@ -446,7 +446,6 @@ text-decoration: underline;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2.26rem;
-  /* max-width: 56.67rem; */
 }
 
 .menu_block__item  {
