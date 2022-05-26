@@ -1,0 +1,290 @@
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  .content {
+    max-width: 576px;
+  }
+
+  .h1 {
+    font-size: 2.53rem;
+    line-height: 2.87rem;
+  }
+
+  .h2 {
+    font-weight: 600;
+    font-size: 2.33rem;
+    line-height: 4rem;
+  }
+
+  .text3 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .btn_big {
+    padding: 0 3rem;
+    font-size: 1.3rem;
+    line-height: 5rem;
+  }
+
+  .btn_big_primary {
+    padding: 0 4.1rem;
+  }
+
+  .btn_no-border {
+    font-size: 1.6rem;
+  }
+
+  .btn_big_last {
+    padding: 0 6.3rem;
+    font-size: 1.3rem; 
+    line-height: 5rem;
+  }
+
+  /****************************** Header *********************************/
+
+  .header__nav-group {
+    margin-bottom: 3rem;
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .nav__menu {
+    flex-flow: row nowrap;
+
+    overflow-x: scroll;
+  }
+
+  .nav__menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul.nav__menu > li {
+    flex-shrink: 0;
+    max-width: 100%;
+
+    font-size: 1.3rem;
+    line-height: 1.33rem;
+  }
+ 
+  .nav__menu > li a {
+    padding: 0.67rem 0.3rem;
+  }
+
+  .nav__item-link_active {
+    border-bottom: 3px solid #FF6336;
+    margin-bottom: -1px;
+  }
+
+  .btn-group {
+    margin-top: -3rem;
+    gap: 0.3rem;
+  }
+
+  /****************************** Section_1 *********************************/
+
+  .intro__content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .intro-group {
+    padding-bottom: 0.33rem;
+  }
+  
+  .intro__title {
+    margin: 2.33rem 0 2rem;
+  }
+
+  .intro__description {
+    font-size: 1.47rem;
+    line-height: 2.13rem;
+  }
+
+  .intro__img {
+    padding: 0 0;
+  }
+
+  .intro__btn-group {
+    padding-top: 1.33rem;
+    gap: 0.67rem;
+  }
+
+    /****************************** Section_2 *********************************/
+
+  .consumers__title {
+    padding: 1.67rem 0 4.67rem; 
+  }
+
+  .consumers__list {
+    padding: 0 1.33rem 3.33rem
+  }
+
+  /****************************** Section_3 *********************************/
+
+  .features__content {
+    padding: 2rem 1.33rem;
+  }
+  
+  .features__item {
+  padding: 0;
+  }
+
+  
+  .features__item_definition {
+    padding: 1rem; 
+    margin-bottom: 1rem;
+
+    text-align: center;
+  }
+
+  .features__item-description {
+    text-align: left;
+  }
+  
+  .indent_left {
+    padding: 1rem;
+  }
+  
+  .features__item_depiction {
+    margin-bottom: 2rem;
+  }
+
+  /****************************** Section_4 *********************************/
+
+  .apps-formats__title {
+    margin: 0 auto;
+  }
+
+  .apps-formats__item {
+    width: 100%;
+    padding: 1.33rem 1rem 0.33rem;
+    margin-bottom: 2rem;
+  }
+
+  /****************************** Section_5 *********************************/
+
+  .team-members__content {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .team-members__title {
+    margin-bottom: 1.67rem;
+    
+    text-align: center;
+  }
+
+  .team-members__wrapper {
+    flex-flow: column nowrap;
+  }
+
+  .team-members__item {
+    max-width: 100%;
+    padding: 0 2rem 0 0;
+
+    text-align: center;
+  }
+
+  .team-members__item-img {
+    transform: translate(-50%, -50%);
+  }
+
+  /****************************** Section_7 *********************************/
+
+  .achievement__img {
+    margin: 0 auto 1.33rem auto;
+  }
+
+  .achievement__titel {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-right: 0;
+
+    text-align: center;
+  }
+
+  .achievement__item-2 {
+    gap: 0.67rem;
+    padding: 2.67rem 2rem 1.33rem;
+  }
+
+  .achievement__wrapper {
+    max-width: 10rem;
+  }
+
+  .img36x37 {
+    max-width: 83%;
+  }
+
+  .img150x37 {
+    max-width: 100%;
+  }
+
+  /****************************** Footer *********************************/
+  .case-studies__wrapper {
+    padding-bottom: 0;
+  }
+  
+  .case-studies__item {
+    padding-right: 0;
+  }
+  
+  .case-studies__menu {
+    justify-content: center;
+    gap: 1.26rem;
+  }
+  
+  .case-studies__menu-item  {
+    transform: translateX(-5%);
+
+    text-align: center;
+  }
+
+  .case-studies__menu-link {
+    position: relative;
+  }
+
+  .case-studies__menu .case-studies__menu-item > ul {
+    display: none;
+  }
+
+  .case-studies__menu-link::after {
+    content: url(../../images/menu.svg);
+    position: absolute;
+    top: 0;
+    transform: translateY(-10%);
+  }
+
+  .copyright__wrapper {
+    padding-top: 2.33rem;
+    padding-bottom: 2.33rem;
+  }
+
+  .copyright-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .copyright__description {
+    width: 25rem;
+  }
+  
+  .copyright-group_policy {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+}

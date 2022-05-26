@@ -54,9 +54,8 @@
 }
 
 .consumers__title {
-  max-width: 48rem;
   margin: 0 auto;
-  padding: 6.67rem 0 4.67rem; 
+  padding: 6.67rem 19rem 4.67rem; 
 
   text-align: center;
 }
@@ -133,7 +132,7 @@ text-decoration: underline;
 }
 
 .apps-formats__title {
-  margin: 0 auto 4rem;
+  margin-bottom: 4rem;
   
   text-align: center;
 }
@@ -183,7 +182,7 @@ text-decoration: underline;
 
 .team-members__wrapper {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
 }
 
@@ -208,9 +207,6 @@ text-decoration: underline;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
-  max-width: 100%;
-  height: auto;
 }
 
 .team-members__item-title {
@@ -350,14 +346,14 @@ text-decoration: underline;
 }
 
 .compatibility__title {
-  display: inline-block;
-  max-width: 52.66rem;
+  padding-left: 16.67rem;
+  padding-right: 16.67rem;
   margin: 0 0 2rem;
 }
 
 .compatibility__description {
-  display: inline-block;
-  max-width: 36rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
   margin-bottom: 1.67rem;
 
   font-weight: 400;

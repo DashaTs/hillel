@@ -1,0 +1,245 @@
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+
+  .content {
+    max-width: 768px;
+  }
+
+  /****************************** Header *********************************/
+
+  .position {
+    position: relative;
+  }
+
+  .header__content {
+    padding: 1.67rem 1.33rem;
+  }
+
+  .header__nav-group {
+    gap: 1.5rem;
+  }
+
+  ul.nav__menu > li {
+    margin-right: 1.3rem;
+  }
+
+  /****************************** Section_1 *********************************/
+
+  .intro__content {
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 1.33rem;
+  }
+
+  .intro-group {
+    margin: 0 auto;
+    
+    text-align: center;
+  }
+  
+  .intro__title {
+    margin: 3rem 0 3.33rem;
+  }
+
+  .intro__description {
+    padding-right: 0;
+  }
+
+  .intro__img {
+    order: -1;
+    padding: 0 2rem;
+    margin-left: 0;
+  }
+
+  .intro__btn-group {
+    justify-content: center;
+  }
+
+    /****************************** Section_2 *********************************/
+
+  .consumers__title {
+    padding: 1.67rem 0 4.67rem; 
+  }
+
+  .consumers__list {
+    gap: 2rem;
+    padding: 0 1.33rem 3.33rem
+  }
+
+  .consumers__list:last-child {
+    justify-content: center;
+  }
+
+  /****************************** Section_3 *********************************/
+
+  .features__content {
+    padding: 4rem 1.33rem;
+  }
+  
+  .features__item {
+    flex-flow: column wrap;
+    margin-bottom: 0;
+    padding: 0 8rem;
+  }
+
+  .features__item_definition {
+    width: 100%;
+    padding: 2rem 5rem; 
+  }
+  
+  .indent_left {
+    padding: 2rem 5rem;
+    order: -1;
+  }
+  
+  .features__item_depiction {
+    width: 100%;
+    padding: 6rem 4.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .features__content > div.features__item:last-child .features__item_depiction {
+    margin-bottom: 0;
+  } 
+  
+  .position_bottom {
+    padding-bottom: 0;
+  }
+
+  /****************************** Section_4 *********************************/
+
+  .apps-formats__content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .apps-formats__title {
+    max-width: 50rem;
+  }
+
+  .apps-formats__wrapper {
+    justify-content: space-evenly;
+  }
+
+  /****************************** Section_5 *********************************/
+
+  .team-members__content {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .team-members__wrapper {
+    justify-content: space-between;
+  }
+
+  .team-members__item {
+    max-width: 20rem;
+    padding: 0 2rem 8rem 0;
+
+    text-align: left;
+  }
+
+  /****************************** Section_6 *********************************/
+
+  .recommendation__content {
+    padding-top: 3.33rem;
+    padding-bottom: 3.33rem;
+  }
+
+  .recommendation__img {
+    order: -1;
+    max-width: 20rem;
+    margin: 0 auto 1.33rem;
+  }
+
+  /****************************** Section_7 *********************************/
+
+  .achievement__content {
+    flex-flow: column wrap;
+  }
+
+  .achievement__img {
+    margin: 0 4.6rem 1.33rem 0;
+  }
+
+  .achievement__item-2 {
+    padding: 2.67rem 6rem 1.33rem 8rem;
+
+    border-top: 1px solid #000000;
+    border-left: none;
+  }
+
+  /****************************** Section_8 *********************************/
+
+  .compatibility__content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    text-align: center;
+  }
+
+  .compatibility__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 2rem;
+  }
+
+  /****************************** Section_9 *********************************/
+
+  .motivation__content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  } 
+
+  /****************************** Footer *********************************/
+  .case-studies__wrapper {
+    flex-flow: column wrap;
+    padding-top: 3.67rem;
+    padding-bottom: 3.67rem;
+    gap: 0;
+    
+    border-bottom: 1px solid #000000;
+  }
+  
+  .case-studies__item {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  
+  .case-studies__item-title {
+    margin-bottom: 2rem;
+  
+    font-size: 2.66rem;
+  }
+  
+  .case-studies__item-img {
+    max-width: 20rem;
+  }
+  
+  .case-studies__item-link_img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .case-studies__item-description {
+    margin-bottom: 1rem;
+  }
+  
+  .case-studies__wrapper_menu {
+    width: 100%;
+    padding-top: 1.33rem;
+
+    border-top: 1px solid #000000;
+  }
+  
+  .case-studies__menu {
+    justify-content: space-between;
+  }
+  
+  .case-studies__menu-item  {
+    flex-basis: 150px;
+  }
+}
