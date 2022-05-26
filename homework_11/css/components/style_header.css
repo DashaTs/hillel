@@ -12,6 +12,10 @@
   padding: 1.67rem 0;
 }
 
+.header__nav-group > a {
+  margin: auto 0;
+}
+
 .header__nav-group {
   display: flex;
   flex-flow: row wrap;
@@ -33,6 +37,10 @@ ul.nav__menu > li {
   font-size: 1rem;
   line-height: 1.33rem;
   text-align: left;
+}
+
+ul.nav__menu > li:last-child {
+  margin-right: 0;
 }
 
 .nav__menu > li a {

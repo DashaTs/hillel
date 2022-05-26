@@ -12,6 +12,10 @@
   padding: 1.67rem 0;
 }
 
+.header__nav-group > a {
+  margin: auto 0;
+}
+
 .header__nav-group {
   display: flex;
   flex-flow: row wrap;
