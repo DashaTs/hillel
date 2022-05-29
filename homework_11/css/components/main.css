@@ -2,7 +2,7 @@
 
 .intro__content {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 6.67rem;
@@ -40,10 +40,14 @@
   line-height: 1.67rem;
 }
 
+.intro__img-wrapper {
+  max-width: 50.67rem;
+  margin-left: -1.33rem;
+}
+
 .intro__img {
   max-width: 100%;
   height: auto;
-  margin-left: -1.33rem;
 }
 
 /****************************** Section_2 *********************************/

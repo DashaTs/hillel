@@ -75,7 +75,7 @@
     line-height: 2.13rem;
   }
 
-  .intro__img {
+  .intro__img-wrapper {
     padding: 0 0;
   }
 
@@ -141,6 +141,7 @@
 
   .team-members__wrapper {
     flex-flow: column nowrap;
+    align-items: center;
   }
 
   .team-members__item {
