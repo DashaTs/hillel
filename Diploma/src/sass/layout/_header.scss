@@ -1,0 +1,129 @@
+@import '../utils/variables';
+
+%header_flex-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.l-header {
+  position: relative;
+  z-index: 1;
+  
+  display: grid;
+  grid-template-areas:  "l-header__bl_navigation l-header__bl_navigation"
+                        "l-header__bl_breadcrumbs l-header__bl_pagination";
+  align-items: center;
+  padding: 0;
+  
+  line-height: 0;
+  
+  .l-header__nav {
+    position: relative;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 245, 250, 0.2);
+    z-index: -1;
+    }
+
+    @media only screen and ($tablet-sd) {
+      &::before {
+        display: none;
+        }
+    }
+  }
+
+  @media only screen and ($tablet-sd) {
+    grid-template-areas:  "l-header__bl_navigation"
+                          "l-header__bl_breadcrumbs"
+                          "l-header__bl_pagination";
+    align-items: center;
+    padding: 50px 60px 0 60px;
+    gap: 30px;
+    
+    &__link::before {
+      margin: 0 6px;
+
+      background-color: $color-separator;
+    }
+  }
+
+  @media only screen and ($desktop-sd) {
+    grid-template-areas:  "l-header__bl_breadcrumbs l-header__bl_navigation"
+                          "l-header__bl_breadcrumbs l-header__bl_pagination";                 
+    justify-content: stretch;
+    gap: 16px;
+  }
+
+  &__nav {
+    grid-area: l-header__bl_navigation;
+    @extend %header_flex-item;
+    justify-content: space-between;
+    padding: 10px 15px;
+    gap: 6px;
+
+    @media only screen and ($tablet-sd) {
+      justify-self: start;
+      padding: 0;
+    }
+
+    @media only screen and ($desktop-sd) {
+      justify-self: end;
+    }
+  }
+
+  &__bl_contacts {
+    @extend %header_flex-item;
+  }
+
+  &__breadcrumbs {
+    grid-area: l-header__bl_breadcrumbs;
+    padding: 10px 15px;
+    justify-self: start;
+
+    
+    @media only screen and ($tablet-sd) {
+      padding: 0;
+
+      background: none;
+    }
+  }
+
+  &__pagination {
+    grid-area: l-header__bl_pagination;
+    padding: 10px 15px;
+    justify-self: end;
+
+    @media only screen and ($tablet-sd) {
+      padding: 0;
+      justify-self: start;
+
+      background: none;
+    }
+
+    @media only screen and ($desktop-sd) {
+      justify-self: end;
+    }
+  }
+}
+
+.bl_contacts__item > a {
+  display: block;
+}
+
+ .wide {
+  display: none;
+
+  @media only screen and ($tablet-sd) {
+    & {
+      display: block;
+    }
+  }
+} 

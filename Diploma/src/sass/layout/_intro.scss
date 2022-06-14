@@ -1,0 +1,41 @@
+@import '../utils/_variables';
+
+.l-intro {
+  &__wrapper {
+    background: $color-gradient-supersoft;
+  }
+
+  &__section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  
+    &::before {
+      content: url(../../img/main_svg/symbol.svg);
+      position: absolute;
+      width: 87.23vh;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+  }
+
+  &__slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: block;
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+}

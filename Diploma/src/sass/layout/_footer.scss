@@ -1,0 +1,89 @@
+@import '../utils/variables';
+
+%footer_flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  @media only screen and ($tablet-sd) {
+    & {
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      gap: 0;
+    }
+  }
+}
+
+.l-footer__bg {
+  background-color: $color-bg;
+}
+
+.l-footer {
+  display: grid;
+  grid-template-areas:  "l-footer__bl_address"
+                        "l-footer__bl_contact"
+                        "l-footer__bl_policy";
+  gap: 21px;
+  padding: 32px 0 30px;
+
+  text-align: center;
+  border-top: 2px solid $color-separator;
+
+  @media only screen and ($tablet-sd) {
+    & {
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  &__bl_address {
+    grid-area: l-footer__bl_address;
+    @extend %footer_flex-item;
+  }
+
+  &__bl_contacts {
+    grid-area: l-footer__bl_contact;
+    @extend %footer_flex-item;
+    margin-bottom: 9px;
+
+    @media only screen and ($tablet-sd) {
+      & {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__bl_policy {
+    grid-area: l-footer__bl_policy;
+    // display: flex;
+    // justify-content: center;
+
+    @media only screen and ($tablet-sd) {
+      & {
+        text-align: center;
+      }
+    }  
+
+    @media only screen and ($tablet-hd) {
+      & {
+        text-align: right;
+      }
+    }  
+  }
+}
+
+// *************************Tablet-SD****************************
+
+@media only screen and ($tablet-sd) {
+  .primary-page {
+    grid-template-areas:  "l-footer__bl_address l-footer__bl_policy"
+                          "l-footer__bl_contact l-footer__bl_contact";
+    justify-content: stretch;
+
+    .l-footer__bl_policy {
+      text-align: right;
+    }  
+  }
+}

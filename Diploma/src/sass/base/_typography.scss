@@ -1,0 +1,112 @@
+@import '../utils/_variables';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat-Regular.woff2) format('woff2'),
+      url(../../fonts/Montserrat-Regular.woff) format('woff');
+      
+      font-weight: 400;
+      font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat-Bold.woff2) format('woff2'),
+      url(../../fonts/Montserrat-Bold.woff) format('woff');
+      
+      font-weight: 700;
+      font-style: normal;
+}
+
+html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+
+  background: $color-gradient-red_text;
+  background-clip: text;
+  color: transparent;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+
+  color: $color-main-regular;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: $color-main-regular;
+}
+
+.h3-caps {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $color-main-regular;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $color-main-regular;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.list_txt {
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.l-content {
+  margin: 0 auto;
+  padding: 0 30px;
+  min-width: 375px;
+}
+
+// *************************Tablet-SD****************************
+
+@media only screen and ($tablet-sd) {
+
+  .l-content {
+    padding: 0 60px;
+    min-width: 768px;
+  }
+}
+
+// *************************Desktop-HD****************************
+
+@media only screen and ($desktop-hd) {
+
+  .l-content {
+    padding: 0 160px;
+    min-width: 1920px;
+  }
+}

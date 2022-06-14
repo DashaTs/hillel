@@ -1,0 +1,79 @@
+@import '../utils/variables';
+
+.c-address__link {
+  color: $color-text;
+
+  .t-dark & {
+    color: $color-t_dark;
+  }
+}
+
+.c-map__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.c-tel__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $color-main-alt;
+
+  &_header {
+    color: $color-text;
+  }
+
+  .t-dark & {
+    color: $color-t_dark;
+  }
+}
+
+.c-social__link {
+  display: inline-block;
+  vertical-align: middle;
+
+  .t-dark & path {
+    fill: $color-t_dark;
+  }
+
+  @media only screen and ($desktop-sd) {
+    &:hover path {
+      fill: $color-accent;
+    }
+  }
+}
+
+.c-mail__link {
+  font-weight: 700;
+
+  @media only screen and ($desktop-sd) {
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+@media only screen and ($tablet-sd) {
+  
+  .link::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
+
+    border-radius: 50%;
+    margin: 0 10px;
+
+    background-color: $color-text;
+
+    .t-dark &  {
+      background-color: $color-t_dark;
+    }
+  }
+}

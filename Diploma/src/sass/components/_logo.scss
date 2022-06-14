@@ -1,0 +1,19 @@
+@import '../utils/_variables';
+
+.c-logo {
+  width: 70px;
+  height: 32px;
+
+  & > path:not(:first-child) {
+    fill: $color-main-regular;
+  }
+
+  .t-dark & > path:not(:first-child) {
+    fill: $color-t_dark;
+  }
+
+  @media only screen and ($tablet-sd) {
+    width: 130px;
+    height: 60px;
+  }
+}

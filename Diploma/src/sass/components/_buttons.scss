@@ -1,0 +1,41 @@
+.l-pagination__btn {
+  text-align: right;
+  line-height: 0;
+
+  &--hamburger:active {
+    background: $color-separator;
+    border-radius: 8px;
+  }
+
+  @media only screen and ($tablet-sd) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.c-hamburger {
+  stroke: $color-main-regular;
+
+  .t-dark & > path {
+    stroke: $color-t_dark;
+  } 
+}
+
+.c-wrapper__scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  z-index: 3;
+
+  & svg > * { 
+    transition: stroke 300ms;
+  }
+  
+  &:hover svg > *,
+  &:focus svg > * {
+    stroke: #F0145A;
+  }
+}

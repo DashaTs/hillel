@@ -1,0 +1,18 @@
+@import '../utils/_variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-active-regular;
+}

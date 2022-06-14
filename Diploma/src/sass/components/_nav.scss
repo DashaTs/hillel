@@ -1,0 +1,211 @@
+@import '../utils/_variables';
+
+.c-breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0 10px;
+  gap: 4px;
+
+  &__item {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__item::after {
+    display: inline-block;
+    content: url(../../img/header_icons/slash.svg);
+    width: 12px;
+    height: 26px;
+    margin-right: 4px;
+
+    @media only screen and ($tablet-sd) {
+      width: 21px;
+      height: 47px;
+    }
+  }
+
+  &__item:last-child::after {
+    display: none;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  
+    color: $color-main-regular;
+
+    .t-dark & {
+      color: $color-t_dark;
+    }
+  
+    @media only screen and ($tablet-sd) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  @media only screen and ($tablet-sd) {
+    padding: 0;
+  }
+}
+
+.c-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+
+  .is-active.c-link {
+    color: $color-accent;
+  }
+
+  @media only screen and ($tablet-sd) {
+    & {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 15px;
+    
+      .is-active.c-link {
+        color: $color-accent;
+        border-bottom: 2px solid $color-accent;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 7px 0px;
+
+    background: $color-bg;
+    border-radius: 12px;
+
+    &:active {
+      background: $color-separator;
+    }
+
+    @media only screen and ($tablet-sd) {
+      & {
+        background: none;
+      }
+
+      &:active {
+        background: none;
+      }
+    }
+  }
+
+
+  &__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: $color-active-regular;
+  
+    @media only screen and ($tablet-sd) {
+      font-size: 16px;
+      line-height: 20px;
+
+      .t-dark & {
+        color: $color-t_dark;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $color-active-regular;
+      }
+
+      .t-dark &:hover {
+        border-bottom: 2px solid $color-t_dark;
+      }
+    }
+  }
+}
+
+.l-pagination {
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $color-main-regular;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.7;
+      z-index: -1;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: calc(100% - 16px);
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+
+    background: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .check {
+    display: none;
+  }
+
+  .check:checked + &__wrapper {
+    display: block;
+  }
+
+  @media only screen and ($tablet-sd) {
+  
+    &__wrapper {
+      position: static;
+
+      display: block;
+      height: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__nav {
+      position: static;
+      transform: translateX(0);
+      
+      flex-direction: row;
+      gap: 0;
+      width: 100%;
+      padding: 0;
+
+      background: none;
+      border-radius: 0;
+    }
+  }
+}
