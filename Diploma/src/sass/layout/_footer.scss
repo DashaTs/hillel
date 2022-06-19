@@ -1,4 +1,5 @@
-@import '../utils/variables';
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 %footer_flex-item {
   display: flex;
@@ -40,12 +41,14 @@
 
   &__bl_address {
     grid-area: l-footer__bl_address;
+    gap: 10px;
     @extend %footer_flex-item;
   }
 
   &__bl_contacts {
     grid-area: l-footer__bl_contact;
     @extend %footer_flex-item;
+    gap: 10px;
     margin-bottom: 9px;
 
     @media only screen and ($tablet-sd) {
@@ -73,7 +76,6 @@
     }  
   }
 }
-
 // *************************Tablet-SD****************************
 
 @media only screen and ($tablet-sd) {
@@ -85,5 +87,16 @@
     .l-footer__bl_policy {
       text-align: right;
     }  
+  }
+
+  @include separator (bl_address__item, $color-text);
+  @include separator (bl_contacts__item, $color-text);
+
+  .l-footer__bl_address .bl_address__item:first-child::before {
+    display: none;
+  }
+
+  .l-footer__bl_contacts .bl_contacts__item:first-child::before {
+    display: none;
   }
 }

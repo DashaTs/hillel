@@ -1,4 +1,4 @@
-@import '../utils/_variables';
+@use '../utils/variables' as *;
 
 .c-breadcrumbs {
   display: flex;
@@ -17,11 +17,6 @@
     width: 12px;
     height: 26px;
     margin-right: 4px;
-
-    @media only screen and ($tablet-sd) {
-      width: 21px;
-      height: 47px;
-    }
   }
 
   &__item:last-child::after {
@@ -42,15 +37,6 @@
     .t-dark & {
       color: $color-t_dark;
     }
-  
-    @media only screen and ($tablet-sd) {
-      font-size: 36px;
-      line-height: 44px;
-    }
-  }
-
-  @media only screen and ($tablet-sd) {
-    padding: 0;
   }
 }
 
@@ -62,22 +48,30 @@
   padding: 0px;
   gap: 15px;
 
-  .is-active.c-link {
+  .is-active.link-accent {
     color: $color-accent;
   }
 
-  @media only screen and ($tablet-sd) {
-    & {
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 15px;
-    
-      .is-active.c-link {
-        color: $color-accent;
-        border-bottom: 2px solid $color-accent;
-      }
+  .is-active.link-gradient {
+    background: $color-gradient-red_text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &-exp {
+    flex-direction: row;
+    flex-flow: row nowrap;
+    gap: 30px;
+    padding-bottom: 30px;
+    min-width: calc(100% + 30px);
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+      
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -96,17 +90,12 @@
       background: $color-separator;
     }
 
-    @media only screen and ($tablet-sd) {
-      & {
-        background: none;
-      }
-
-      &:active {
-        background: none;
-      }
+    &-exp {
+      padding: 0;
+      background: none;
+      border-radius: 0;
     }
   }
-
 
   &__link {
     font-weight: 700;
@@ -115,22 +104,12 @@
     text-align: center;
 
     color: $color-active-regular;
-  
-    @media only screen and ($tablet-sd) {
-      font-size: 16px;
-      line-height: 20px;
 
-      .t-dark & {
-        color: $color-t_dark;
-      }
+    &-exp {
+      font-size: 30px;
+      line-height: 37px;
 
-      &:hover {
-        border-bottom: 2px solid $color-active-regular;
-      }
-
-      .t-dark &:hover {
-        border-bottom: 2px solid $color-t_dark;
-      }
+      color: $color-text;
     }
   }
 }
@@ -181,31 +160,134 @@
   .check:checked + &__wrapper {
     display: block;
   }
+}
 
-  @media only screen and ($tablet-sd) {
+@media only screen and ($tablet-sd) {
+  .c-breadcrumbs {
+    padding: 0;
+
+    &__item::after {
+      width: 21px;
+      height: 47px;
+    }
+
+    &__text {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .c-list {
+    & {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 15px;
+      
+      .is-active.c-link {
+        color: $color-accent;
+        border-bottom: 2px solid $color-accent;
+      }
+    }
+
+    &-exp {
+      gap: 30px;
+      padding-bottom: 60px;
+      min-width: calc(100% + 60px);
+    }
   
+    &__item {
+      & {
+        background: none;
+      }
+
+      &:active {
+        background: none;
+      }
+
+      &-exp {
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+  
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+  
+      .t-dark & {
+        color: $color-t_dark;
+      }
+  
+      &:hover {
+        border-bottom: 2px solid $color-active-regular;
+      }
+  
+      .t-dark &:hover {
+        border-bottom: 2px solid $color-t_dark;
+      }
+
+      &-exp {
+        font-size: 38px;
+        line-height: 46px;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .l-pagination {
     &__wrapper {
       position: static;
-
+  
       display: block;
-      height: auto;
-
+       height: auto;
+  
       &::before {
         display: none;
       }
     }
-
+  
     &__nav {
       position: static;
       transform: translateX(0);
-      
+        
       flex-direction: row;
       gap: 0;
       width: 100%;
-      padding: 0;
-
+       padding: 0;
+  
       background: none;
       border-radius: 0;
+    }
+  }
+} 
+
+@media only screen and ($tablet-hd) {
+  .c-list {
+    &-exp {
+      flex-direction: column;
+      min-width: 0;
+      padding-bottom: 0;
+    }
+  
+    &__item {
+      &-exp {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media only screen and ($desktop-hd) {
+  .c-list__link {
+    &-exp {
+      &:hover {
+        color: $color-accent;
+      }
     }
   }
 }

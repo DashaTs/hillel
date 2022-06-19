@@ -1,0 +1,19 @@
+@mixin separator ($class, $color-text) {
+  .#{$class} {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .#{$class}::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: $color-text;
+  }
+}
+

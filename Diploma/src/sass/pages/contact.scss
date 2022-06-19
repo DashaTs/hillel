@@ -1,12 +1,16 @@
-@import '../base/_normalize';
-@import '../utils/_variables';
-@import '../base/_typography';
-@import '../base/_content';
-@import '../components/_links';
-@import '../components/_info-text';
-@import '../layout/_footer';
-@import '../layout/_header';
-@import '../components/_lang-switcher';
-@import '../components/_logo';
-@import '../components/_nav';
-@import '../components/_buttons';
+@use '../utils/variables' as *;
+
+@use '../base/normalize';
+@use '../base/typography';
+@use '../base/content';
+
+@use '../layout/footer';
+@use '../layout/header';
+@use '../layout/intro';
+
+@use '../components/links';
+@use '../components/info-text';
+@use '../components/lang-switcher';
+@use '../components/logo';
+@use '../components/nav';
+@use '../components/buttons';

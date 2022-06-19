@@ -1,4 +1,5 @@
-@import '../utils/variables';
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 %header_flex-item {
   display: flex;
@@ -44,7 +45,6 @@
     grid-template-areas:  "l-header__bl_navigation"
                           "l-header__bl_breadcrumbs"
                           "l-header__bl_pagination";
-    align-items: center;
     padding: 50px 60px 0 60px;
     gap: 30px;
     
@@ -53,12 +53,14 @@
 
       background-color: $color-separator;
     }
+
+    @include separator (bl_contacts__item, $color-text);
   }
 
   @media only screen and ($desktop-sd) {
     grid-template-areas:  "l-header__bl_breadcrumbs l-header__bl_navigation"
                           "l-header__bl_breadcrumbs l-header__bl_pagination";                 
-    justify-content: stretch;
+    padding: 50px 160px 0 160px;
     gap: 16px;
   }
 
@@ -81,6 +83,7 @@
 
   &__bl_contacts {
     @extend %header_flex-item;
+    gap: 10px;
   }
 
   &__breadcrumbs {
@@ -114,11 +117,23 @@
   }
 }
 
-.bl_contacts__item > a {
-  display: block;
+.bl_contacts__item {
+  color: $color-text;
+
+  .t-dark & {
+    color: $color-t_dark;
+  }
+
+  .t-dark &::before {
+    background-color: $color-t_dark;
+  }
+
+  & > a {
+    display: block;
+  }
 }
 
- .wide {
+.wide {
   display: none;
 
   @media only screen and ($tablet-sd) {

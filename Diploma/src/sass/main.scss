@@ -1,22 +1,23 @@
-@import 'utils/_variables';
+@use 'utils/variables' as *;
 
-@import 'base/_normalize';
-@import 'base/_typography';
-@import 'base/_content';
+@use 'base/normalize';
+@use 'base/typography';
+@use 'base/content';
 
-@import 'layout/_footer';
-@import 'layout/_header';
-@import 'layout/_intro';
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/intro' ;
 
-@import 'components/_links';
-@import 'components/_info-text';
-@import 'components/_lang-switcher';
-@import 'components/_logo';
-@import 'components/_nav';
-@import 'components/_buttons';
+@use 'components/links';
+@use 'components/info-text';
+@use 'components/lang-switcher';
+@use 'components/logo';
+@use 'components/nav';
+@use 'components/buttons';
+@use 'components/cards';
 
-@import 'pages/about.scss';
-@import 'pages/team.scss';
-@import 'pages/services.scss';
-@import 'pages/contact.scss';
-@import 'pages/publications.scss';
+@use 'pages/about';
+@use 'pages/team';
+@use 'pages/services';
+@use 'pages/contact';
+@use 'pages/publications';

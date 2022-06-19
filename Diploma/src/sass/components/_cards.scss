@@ -1,0 +1,56 @@
+@use '../utils/variables' as *;
+
+.c-text-card {
+  &__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media only screen and ($tablet-sd) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+  
+  &__description {
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .t-dark & {
+    color: $color-t_dark;
+  }
+}
+
+.c-card {
+  &__icon {
+
+    // width: 64px;
+    // height: 64px;
+    // padding: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__icon::before {
+    content: "";
+    
+    background: #FFFFFF;
+    border-radius: 24px;
+  }
+
+  &__title {
+    color: $color-active-regular;
+    margin: 0 0 15px 0;
+  }
+
+  &__description {
+    color: #FFFFFF;
+    margin: 0;
+  }
+}
