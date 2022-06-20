@@ -1,0 +1,88 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+@include link (c-team__link);
+
+.c-team {
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+
+    @media only screen and ($tablet-hd) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    height: 500px;
+
+    @media only screen and ($tablet-hd) {
+      flex: 0 0 400px;
+      height: auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    background: $color-bg;
+  }
+
+  &__link {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0 0 30px;
+  }
+
+  &__author {
+    margin-bottom: 6px;
+    
+    color: $color-text;
+  }
+
+  &__job-title {
+    font-size: 14px;
+    line-height: 22px;
+
+    color: $color-text;
+  }
+}
+
+
+.swiper-pagination {
+  
+  &-bullet {
+    width: 16px;
+    height: 16px;
+
+    background: $color-active-regular;
+    opacity: 0.2;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+}

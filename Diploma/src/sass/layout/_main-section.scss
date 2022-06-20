@@ -1,0 +1,11 @@
+@use '../utils/variables' as *;
+
+.l-main {
+  &__wrapper {
+    background: #FFFFFF;
+  }
+} 
+
+.l-team {
+  margin-bottom: 60px;
+}

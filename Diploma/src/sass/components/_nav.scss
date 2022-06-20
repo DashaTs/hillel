@@ -234,6 +234,7 @@
 
         &:hover {
           border-bottom: none;
+          color: $color-accent;
         }
       }
     }
@@ -277,16 +278,6 @@
     &__item {
       &-exp {
         justify-content: flex-end;
-      }
-    }
-  }
-}
-
-@media only screen and ($desktop-hd) {
-  .c-list__link {
-    &-exp {
-      &:hover {
-        color: $color-accent;
       }
     }
   }

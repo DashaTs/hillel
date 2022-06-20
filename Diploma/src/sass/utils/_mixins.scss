@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 @mixin separator ($class, $color-text) {
   .#{$class} {
     display: flex;
@@ -14,6 +16,35 @@
 
     border-radius: 50%;
     background-color: $color-text;
+  }
+}
+
+@mixin link ($class) {
+  .#{$class} {
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: $color-active-regular;
+  }
+
+  .#{$class}::after {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 2L8 6.5L3.5 11' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+    margin-left: 2px;
+    line-height: 0px;
+  }
+
+  .#{$class}:hover {
+    color: $color-accent;
+  }
+
+  .#{$class}:hover::after {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 2L8 6.5L3.5 11' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
   }
 }
 
