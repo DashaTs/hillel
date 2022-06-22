@@ -7,6 +7,7 @@
 @use '../layout/footer';
 @use '../layout/header';
 @use '../layout/intro';
+@use '../layout/main-section';
 
 @use '../components/links';
 @use '../components/info-text';
@@ -14,3 +15,5 @@
 @use '../components/logo';
 @use '../components/nav';
 @use '../components/buttons';
+@use '../components/cards';
+@use '../components/team-swiper';

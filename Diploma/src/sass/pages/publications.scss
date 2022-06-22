@@ -1,17 +1,19 @@
 @use '../utils/variables' as *;
 
-@use '../base/normalize' as *;
-@use '../base/typography' as *;
-@use '../base/content' as *;
+@use '../base/normalize';
+@use '../base/typography';
+@use '../base/content';
 
-@use '../layout/footer' as *;
-@use '../layout/header' as *;
-@use '../layout/intro' as *;
+@use '../layout/footer';
+@use '../layout/header';
+@use '../layout/intro';
+@use '../layout/main-section';
 
-@use '../components/links' as *;
-@use '../components/info-text' as *;
-@use '../components/lang-switcher' as *;
-@use '../components/logo' as *;
-@use '../components/nav' as *;
-@use '../components/buttons' as *;
-
+@use '../components/links';
+@use '../components/info-text';
+@use '../components/lang-switcher';
+@use '../components/logo';
+@use '../components/nav';
+@use '../components/buttons';
+@use '../components/cards';
+@use '../components/team-swiper';
