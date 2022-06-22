@@ -16,17 +16,15 @@
 
     @media only screen and ($tablet-hd) {
       flex-direction: row;
-      align-items: center;
     }
   }
 
   &__img-box {
     position: relative;
-    height: 500px;
+    flex: 0 0 500px;
 
     @media only screen and ($tablet-hd) {
       flex: 0 0 400px;
-      height: auto;
     }
   }
 
@@ -52,9 +50,15 @@
   }
 
   &__title {
+    margin: 0 0 30px;
+
     font-size: 30px;
     line-height: 37px;
-    margin: 0 0 30px;
+    
+    @media only screen and ($tablet-sd) {
+      font-size: 38px;
+      line-height: 46px;
+    }
   }
 
   &__author {
@@ -70,7 +74,6 @@
     color: $color-text;
   }
 }
-
 
 .swiper-pagination {
   

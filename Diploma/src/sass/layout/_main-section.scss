@@ -9,3 +9,91 @@
 .l-team {
   margin-bottom: 60px;
 }
+
+.l-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+
+  @media only screen and ($desktop-hd) {
+    padding: 0 100px 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    & .c-client:nth-child(n+7) {
+      display: none;
+    }
+
+    @media only screen and (min-width: 570px) {
+      grid-template-columns: repeat(2, 1fr);
+
+      & .c-client:nth-child(n+7) {
+        display: flex;
+      }
+    }
+
+    @media only screen and ($tablet-sd) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and ($tablet-hd) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and ($desktop-hd) {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  }
+
+  &__title {
+    align-self: center;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.l-publications {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: $color-bg;
+
+  &__title {
+    margin: 5px 0 30px;
+
+    @media only screen and ($tablet-sd) {
+      margin-top: 10px; 
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: stretch;
+
+    @media only screen and ($tablet-sd) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      .c-card--publication:last-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media only screen and ($tablet-hd) {
+      grid-template-columns: repeat(3, 1fr);
+
+      .c-card--publication:last-child {
+        grid-column: span 1;
+      }
+    }
+  }
+}

@@ -1,10 +1,9 @@
-// "use strict";
+"use strict";
 
-// const swiper = new Swiper('.swiper', {
-//   direction: 'vertical',
-//   loop: true,
+const swiper = new Swiper('.swiper', {
+  loop: true,
 
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-// });
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});

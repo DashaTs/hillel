@@ -2,6 +2,7 @@
 @use '../utils/mixins' as *;
 
 @include link (c-service__link);
+@include link (c-publications__link);
 
 .c-map__link {
   font-weight: 700;
