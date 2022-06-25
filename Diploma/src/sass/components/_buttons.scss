@@ -3,6 +3,7 @@
 .l-pagination__btn {
   text-align: right;
   line-height: 0;
+  cursor: pointer;
 
   &--hamburger:active {
     background: $color-separator;
@@ -94,5 +95,100 @@
 
   &--ultimate_card {
     background: #000000;
+  }
+}
+
+.c-btn {
+  position: relative;
+  padding: 18px 30px;
+
+  background: $color-active-regular;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border: none;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-active-hover;
+  }
+
+  &:active {
+    background: $color-active-active;
+  }
+
+  .loading_wrapper {
+    display: none;
+  }
+
+  &.is-loading {
+    background: $color-bg-alt;
+    box-shadow: none;
+    color: transparent;
+    
+
+    &:hover,
+    &:active {
+      background: $color-bg-alt;
+      cursor: default;
+    }
+
+    .loading_wrapper {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 35%);
+
+      display: block;
+    }
+  }
+
+  &.has-loaded {
+    background: $color-bg-alt;
+    box-shadow: none;
+    color: transparent;
+
+    &::after {
+      content: "Sent";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: $color-main-regular;
+    }
+
+    &:hover,
+    &:active {
+      background: $color-bg-alt;
+      cursor: default;
+    }
+  }
+}
+
+.rotate-center {
+  animation:rotate-center 1.0s ease-in-out 5s infinite both
+}
+
+@keyframes rotate-center {
+  0% {
+    transform:rotate(0)
+  }
+  100% {
+    transform:rotate(360deg)
+  }
+}
+
+.l-popup__btn {
+  text-align: right;
+  line-height: 0;
+  cursor: pointer;
+
+  &--close {
+    align-self: flex-start;
+
+    &:hover {
+      background: $color-separator;
+      border-radius: 8px;
+    }
   }
 }

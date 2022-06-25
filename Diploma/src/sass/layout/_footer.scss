@@ -39,6 +39,18 @@
     }
   }
 
+  @media only screen and ($tablet-hd) {
+    & {
+      grid-template-areas:  "l-footer__bl_address l-footer__bl_policy"
+                            "l-footer__bl_contact l-footer__bl_contact";
+      justify-content: stretch;
+  
+      .l-footer__bl_policy {
+        text-align: right;
+      }  
+    }
+  }
+
   &__bl_address {
     grid-area: l-footer__bl_address;
     gap: 10px;
@@ -60,8 +72,6 @@
 
   &__bl_policy {
     grid-area: l-footer__bl_policy;
-    // display: flex;
-    // justify-content: center;
 
     @media only screen and ($tablet-sd) {
       & {

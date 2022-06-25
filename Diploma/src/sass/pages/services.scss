@@ -17,3 +17,90 @@
 @use '../components/buttons';
 @use '../components/cards';
 @use '../components/team-swiper';
+@use '../components/popup';
+
+.l-intro {
+  &__wrapper {
+    margin-bottom: 80px;
+  }
+}
+
+.l-footer--services {
+  border-top: none;
+}
+
+// *************************Service****************************
+.l-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  &__type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 30px;
+
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__type-title {
+    margin: 0;
+
+    color: #FFFFFF;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  
+    @media only screen and ($tablet-sd) {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+  }
+
+  @media only screen and ($tablet-sd) {
+    gap: 60px;
+  }
+
+  @media only screen and ($desktop-sd) {
+    padding: 0 180px 0;
+  }
+
+  @media only screen and ($desktop-hd) {
+    padding: 0 280px 0;
+  }
+}
+
+.service {
+  &_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  }
+
+  &_icon {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    margin: 0;
+
+    text-align: center;
+    background: $color-gradient-red_text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &_description {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

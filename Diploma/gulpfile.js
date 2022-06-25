@@ -30,11 +30,13 @@ function styles() {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-    // .pipe(cleancss({ level: { 1: { specialComments: 0 } }, sourceMap: true }))
+    .pipe(cleancss({ level: { 1: { specialComments: 0 } }, sourceMap: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
     .pipe(dest((file) => {
-      return file.base.replace(`${srcDir}${path.sep}sass`, `${buildDir}${path.sep}css`)
+      return file.base
+      .replace(`${srcDir}${path.sep}sass${path.sep}pages`, `${buildDir}${path.sep}css`)
+      .replace(`${srcDir}${path.sep}sass`, `${buildDir}${path.sep}css`);
     })) 
     .pipe(browserSync.stream());
 }
