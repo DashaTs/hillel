@@ -187,6 +187,7 @@
 
     &::before {
       margin-top: 12px;
+      flex-shrink: 0;
 
       background-color: $color-accent;
     }

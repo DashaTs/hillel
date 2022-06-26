@@ -68,8 +68,14 @@
   &__title {
     margin: 5px 0 30px;
 
+    font-size: 30px;
+    line-height: 37px;
+
     @media only screen and ($tablet-sd) {
       margin-top: 10px; 
+
+      font-size: 38px;
+      line-height: 46px;
     }
   }
 

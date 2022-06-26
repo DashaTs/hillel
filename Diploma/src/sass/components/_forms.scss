@@ -1,0 +1,37 @@
+@use '../utils/variables' as *;
+
+.c-contact__form {
+  width: 100%;
+  padding: 15px;
+
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  outline: none;
+
+  &::placeholder {
+    color: $color-text;
+  }
+
+  &:focus {
+    border: 1px solid $color-active-regular;
+  }
+
+  &:disabled {
+    background: $color-bg-alt;
+    border: 1px solid $color-bg-alt;
+  }
+}
+
+.message-form {
+  max-height: 130px;
+  resize: none;
+}
+
+.is-invalid {
+  border: 1px solid #FF0000;
+
+  &::placeholder {
+    color: #FF0000;
+  }
+}
