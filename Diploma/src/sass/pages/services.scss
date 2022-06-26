@@ -97,6 +97,11 @@
     background: $color-gradient-red_text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media only screen and ($tablet-sd) {
+      font-size: 38px;
+      line-height: 46px;
+    }
   }
 
   &_description {
