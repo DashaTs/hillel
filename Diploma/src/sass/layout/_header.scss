@@ -175,10 +175,10 @@
   }
 }
 
-@media only screen and ($desktop-sd) {
+@media only screen and (min-width: 1200px) {
   .service-page {
     grid-template-areas:  "l-header__bl_breadcrumbs l-header__bl_navigation"
-                            "l-header__bl_breadcrumbs l-header__bl_pagination";                 
+                          "l-header__bl_breadcrumbs l-header__bl_pagination";                 
     padding: 50px 60px 0 60px;
     gap: 16px;
 

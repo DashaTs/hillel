@@ -11,6 +11,10 @@
 
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 .c-tel__link {

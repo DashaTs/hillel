@@ -304,11 +304,6 @@
 } 
 
 @media only screen and ($tablet-hd) {
-  .c-breadcrumbs {
-    &__link {
-      align-self: center;
-    }
-  }
   .c-list {
     &-exp {
       flex-direction: column;

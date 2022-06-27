@@ -75,6 +75,10 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    @media only screen and ($tablet-sd) {
+      width: 100%;
+    }
   }
 }
 
