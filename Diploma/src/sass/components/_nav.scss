@@ -231,6 +231,7 @@
   
     &__item {
       & {
+        padding: 0px 0px 3px;
         background: none;
       }
 
@@ -259,7 +260,6 @@
       }
   
       .t-dark &:hover {
-        padding-bottom: 3px;
         border-bottom: 2px solid $color-t_dark;
       }
 
@@ -304,6 +304,11 @@
 } 
 
 @media only screen and ($tablet-hd) {
+  .c-breadcrumbs {
+    &__link {
+      align-self: center;
+    }
+  }
   .c-list {
     &-exp {
       flex-direction: column;

@@ -3,7 +3,6 @@
 .l-pagination__btn {
   text-align: right;
   line-height: 0;
-  cursor: pointer;
 
   &--hamburger:active {
     background: $color-separator;
@@ -17,8 +16,13 @@
   }
 }
 
+.c-close {
+  cursor: pointer;
+}
+
 .c-hamburger {
   stroke: $color-main-regular;
+  cursor: pointer;
 
   .t-dark & > path {
     stroke: $color-t_dark;
